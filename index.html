@@ -92,28 +92,6 @@
         .service-feature{display:flex;align-items:center;gap:0.6rem;font-size:0.85rem;color:var(--text-secondary)}
         .service-feature svg{width:16px;height:16px;stroke:var(--accent-neon);fill:none;stroke-width:2;flex-shrink:0}
         .service-card .btn{margin-top:1.5rem;width:100%;justify-content:center;padding:0.85rem 1.5rem}
-        .service-detail{background:var(--secondary-dark);border-top:1px solid rgba(34,211,238,0.1)}
-        .service-detail:nth-child(even){background:var(--primary-dark)}
-        .service-detail-content{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:center}
-        .service-detail:nth-child(even) .service-detail-content{direction:rtl}
-        .service-detail:nth-child(even) .service-detail-content>*{direction:ltr}
-        .service-detail-card{background:linear-gradient(135deg,rgba(17,24,39,0.8),rgba(10,14,23,0.9));border:1px solid rgba(34,211,238,0.2);border-radius:20px;padding:1.75rem}
-        .detail-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;padding-bottom:1.25rem;border-bottom:1px solid rgba(34,211,238,0.1)}
-        .detail-icon{width:55px;height:55px;background:var(--gradient-tech);border-radius:14px;display:flex;align-items:center;justify-content:center}
-        .detail-icon svg{width:28px;height:28px;stroke:var(--primary-dark);fill:none;stroke-width:2}
-        .detail-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem}
-        .metric-item{background:rgba(34,211,238,0.05);border-radius:12px;padding:1rem;text-align:center}
-        .metric-value{font-family:'Orbitron',monospace;font-size:1.35rem;font-weight:700;color:var(--accent-cyan)}
-        .metric-label{font-size:0.75rem;color:var(--text-secondary);margin-top:0.2rem}
-        .service-detail-text h3{font-family:'Orbitron',monospace;font-size:1.75rem;margin-bottom:0.75rem}
-        .service-detail-text>p{color:var(--text-secondary);font-size:1rem;margin-bottom:1.5rem}
-        .detail-features-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem}
-        .detail-feature{display:flex;align-items:flex-start;gap:0.6rem;padding:0.85rem;background:rgba(34,211,238,0.03);border-radius:10px;border:1px solid transparent;transition:all 0.3s ease}
-        .detail-feature:hover{background:rgba(34,211,238,0.08);border-color:rgba(34,211,238,0.2)}
-        .detail-feature-icon{width:30px;height:30px;min-width:30px;background:rgba(0,255,136,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center}
-        .detail-feature-icon svg{width:15px;height:15px;stroke:var(--accent-neon);fill:none;stroke-width:2}
-        .detail-feature h4{font-size:0.9rem;font-weight:600;margin-bottom:0.15rem}
-        .detail-feature p{font-size:0.8rem;color:var(--text-secondary);margin:0}
         .why-us{background:linear-gradient(180deg,var(--primary-dark) 0%,var(--secondary-dark) 100%)}
         .why-us-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:1.25rem}
         .why-card{background:rgba(17,24,39,0.5);border:1px solid rgba(34,211,238,0.1);border-radius:18px;padding:1.5rem 1.25rem;text-align:center;transition:all 0.3s ease;position:relative;overflow:hidden}
@@ -125,25 +103,28 @@
         .why-card:hover .why-icon svg{stroke:var(--primary-dark)}
         .why-card h3{font-family:'Orbitron',monospace;font-size:0.9rem;margin-bottom:0.6rem}
         .why-card p{font-size:0.8rem;color:var(--text-secondary)}
-        .testimonials{background:var(--primary-dark)}
-        .testimonials-container{max-width:1400px;margin:0 auto}
-        .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:3rem}
-        .testimonial-card{background:linear-gradient(135deg,rgba(17,24,39,0.6),rgba(10,14,23,0.8));border:1px solid rgba(34,211,238,0.15);border-radius:18px;padding:1.75rem;position:relative;transition:all 0.3s ease}
-        .testimonial-card:hover{border-color:var(--accent-cyan);box-shadow:0 10px 40px rgba(14,165,233,0.1)}
-        .testimonial-quote{position:absolute;top:1.25rem;right:1.25rem;font-family:serif;font-size:3.5rem;color:var(--accent-cyan);opacity:0.2;line-height:1}
-        .testimonial-content{margin-bottom:1.25rem}
-        .testimonial-content p{color:var(--text-secondary);font-size:0.9rem;font-style:italic}
-        .testimonial-author{display:flex;align-items:center;gap:0.75rem}
-        .author-avatar{width:45px;height:45px;background:var(--gradient-tech);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Orbitron',monospace;font-weight:700;font-size:0.85rem;color:var(--primary-dark)}
-        .author-info h4{font-weight:600;font-size:0.9rem}
-        .author-info p{font-size:0.8rem;color:var(--text-secondary)}
-        .results-metrics{background:linear-gradient(135deg,rgba(14,165,233,0.1),rgba(0,255,136,0.05));border:1px solid rgba(34,211,238,0.2);border-radius:20px;padding:2.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;text-align:center}
-        .result-item{position:relative}
-        .result-item:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);width:1px;height:60%;background:rgba(34,211,238,0.2)}
-        .result-number{font-family:'Orbitron',monospace;font-size:2.5rem;font-weight:800;background:var(--gradient-tech);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-        .result-label{font-size:0.9rem;color:var(--text-secondary);margin-top:0.4rem}
+        
+        /* CASOS DE ÉXITO - ESTILO INSTAGRAM */
+        .cases{background:var(--primary-dark)}
+        .cases-grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+        .case-card{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:1;cursor:pointer;group}
+        .case-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}
+        .case-card:hover img{transform:scale(1.1)}
+        .case-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,transparent 0%,transparent 40%,rgba(10,14,23,0.95) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;opacity:0;transition:opacity 0.3s ease}
+        .case-card:hover .case-overlay{opacity:1}
+        .case-logo{width:60px;height:60px;background:white;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-family:'Orbitron',monospace;font-weight:800;font-size:0.7rem;color:var(--primary-dark);text-align:center;padding:0.5rem}
+        .case-info h4{font-family:'Orbitron',monospace;font-size:1.1rem;margin-bottom:0.5rem}
+        .case-info p{font-size:0.85rem;color:var(--text-secondary);line-height:1.4}
+        .case-tags{display:flex;gap:0.5rem;margin-top:0.75rem;flex-wrap:wrap}
+        .case-tag{padding:0.25rem 0.75rem;background:rgba(34,211,238,0.2);border-radius:20px;font-size:0.7rem;color:var(--accent-cyan);font-weight:500}
+        
+        /* Cards siempre visibles en mobile */
+        .case-card .case-overlay-mobile{position:absolute;bottom:0;left:0;width:100%;background:linear-gradient(180deg,transparent 0%,rgba(10,14,23,0.95) 100%);padding:1rem;display:none}
+        .case-card .case-overlay-mobile h4{font-family:'Orbitron',monospace;font-size:0.9rem}
+        .case-card .case-overlay-mobile p{font-size:0.75rem;color:var(--text-secondary)}
+
         .contact{background:linear-gradient(180deg,var(--secondary-dark) 0%,var(--primary-dark) 100%)}
-        .contact-container{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:3rem}
+        .contact-container{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
         .contact-info h3{font-family:'Orbitron',monospace;font-size:1.6rem;margin-bottom:0.75rem}
         .contact-info>p{color:var(--text-secondary);margin-bottom:1.5rem}
         .contact-methods{display:grid;gap:1rem;margin-bottom:1.5rem}
@@ -158,15 +139,16 @@
         .social-link:hover{background:var(--gradient-tech);border-color:transparent}
         .social-link svg{width:20px;height:20px;stroke:var(--accent-cyan);fill:none;stroke-width:2;transition:stroke 0.3s ease}
         .social-link:hover svg{stroke:var(--primary-dark)}
+        
+        /* FORMULARIO SIMPLIFICADO */
         .contact-form-container{background:linear-gradient(135deg,rgba(17,24,39,0.8),rgba(10,14,23,0.9));border:1px solid rgba(34,211,238,0.2);border-radius:20px;padding:2rem}
-        .contact-form{display:grid;gap:1.25rem}
-        .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
+        .contact-form{display:grid;gap:1rem}
         .form-group{display:flex;flex-direction:column;gap:0.4rem}
         .form-group label{font-size:0.85rem;font-weight:500;color:var(--text-secondary)}
-        .form-group input,.form-group textarea,.form-group select{padding:0.9rem 1rem;background:rgba(10,14,23,0.8);border:1px solid rgba(34,211,238,0.2);border-radius:10px;color:var(--text-primary);font-family:inherit;font-size:0.95rem;transition:all 0.3s ease}
-        .form-group input:focus,.form-group textarea:focus,.form-group select:focus{outline:none;border-color:var(--accent-cyan);box-shadow:0 0 0 3px rgba(34,211,238,0.1)}
-        .form-group textarea{min-height:100px;resize:vertical}
-        .form-group select{cursor:pointer}.form-group select option{background:var(--primary-dark)}
+        .form-group input,.form-group textarea{padding:0.9rem 1rem;background:rgba(10,14,23,0.8);border:1px solid rgba(34,211,238,0.2);border-radius:10px;color:var(--text-primary);font-family:inherit;font-size:0.95rem;transition:all 0.3s ease}
+        .form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--accent-cyan);box-shadow:0 0 0 3px rgba(34,211,238,0.1)}
+        .form-group textarea{min-height:80px;resize:vertical}
+        
         .footer{background:var(--primary-dark);border-top:1px solid rgba(34,211,238,0.1);padding:3.5rem 5% 1.5rem}
         .footer-content{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:2.5rem;margin-bottom:2.5rem}
         .footer-brand .logo{margin-bottom:1.25rem}
@@ -187,10 +169,10 @@
         .whatsapp-float span{color:white;font-weight:600;font-size:0.9rem}
         .fade-in{opacity:0;transform:translateY(25px);transition:opacity 0.7s ease,transform 0.7s ease}
         .fade-in.visible{opacity:1;transform:translateY(0)}
-        @media(max-width:1200px){.why-us-grid{grid-template-columns:repeat(3,1fr)}}
-        @media(max-width:1024px){.hero-content{grid-template-columns:1fr;text-align:center}.hero-text p{margin-left:auto;margin-right:auto}.hero-buttons{justify-content:center}.hero-stats{justify-content:center}.hero-visual{max-width:400px;margin:0 auto}.about-content,.service-detail-content,.contact-container{grid-template-columns:1fr}.service-detail:nth-child(even) .service-detail-content{direction:ltr}.services-grid{grid-template-columns:1fr;max-width:450px}.testimonials-grid{grid-template-columns:1fr;max-width:450px;margin-left:auto;margin-right:auto}.results-metrics{grid-template-columns:repeat(2,1fr)}.result-item:nth-child(2)::after{display:none}.footer-content{grid-template-columns:1fr 1fr}}
-        @media(max-width:768px){.nav-links{position:fixed;top:65px;left:0;width:100%;flex-direction:column;background:rgba(10,14,23,0.98);padding:1.5rem;gap:1rem;transform:translateY(-150%);opacity:0;transition:all 0.3s ease;border-bottom:1px solid rgba(34,211,238,0.1)}.nav-links.active{transform:translateY(0);opacity:1}.mobile-menu-btn{display:flex}.mobile-menu-btn.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.mobile-menu-btn.active span:nth-child(2){opacity:0}.mobile-menu-btn.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}.hero{padding:5rem 5% 3rem}.hero-stats{flex-direction:column;gap:1rem;align-items:center}.stat-item{text-align:center}section{padding:3.5rem 5%}.why-us-grid{grid-template-columns:repeat(2,1fr)}.detail-features-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-content{grid-template-columns:1fr;text-align:center}.footer-brand .logo{justify-content:center}.footer-brand p{margin-left:auto;margin-right:auto}.social-links{justify-content:center}.footer-bottom{flex-direction:column;text-align:center}.whatsapp-float span{display:none}.whatsapp-float{padding:14px;border-radius:50%}}
-        @media(max-width:480px){.hero-text h1{font-size:1.8rem}.section-title{font-size:1.5rem}.hero-graphic{max-width:280px}.tech-center{width:110px;height:110px;border-radius:20px}.tech-center svg{width:45px;height:45px}.why-us-grid{grid-template-columns:1fr}.results-metrics{grid-template-columns:1fr;gap:1rem}.result-item::after{display:none}}
+        @media(max-width:1200px){.why-us-grid{grid-template-columns:repeat(3,1fr)}.cases-grid{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:1024px){.hero-content{grid-template-columns:1fr;text-align:center}.hero-text p{margin-left:auto;margin-right:auto}.hero-buttons{justify-content:center}.hero-stats{justify-content:center}.hero-visual{max-width:400px;margin:0 auto}.about-content,.contact-container{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr;max-width:450px}.footer-content{grid-template-columns:1fr 1fr}}
+        @media(max-width:768px){.nav-links{position:fixed;top:65px;left:0;width:100%;flex-direction:column;background:rgba(10,14,23,0.98);padding:1.5rem;gap:1rem;transform:translateY(-150%);opacity:0;transition:all 0.3s ease;border-bottom:1px solid rgba(34,211,238,0.1)}.nav-links.active{transform:translateY(0);opacity:1}.mobile-menu-btn{display:flex}.mobile-menu-btn.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}.mobile-menu-btn.active span:nth-child(2){opacity:0}.mobile-menu-btn.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}.hero{padding:5rem 5% 3rem}.hero-stats{flex-direction:column;gap:1rem;align-items:center}.stat-item{text-align:center}section{padding:3.5rem 5%}.why-us-grid{grid-template-columns:repeat(2,1fr)}.cases-grid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}.case-card .case-overlay{opacity:1}.footer-content{grid-template-columns:1fr;text-align:center}.footer-brand .logo{justify-content:center}.footer-brand p{margin-left:auto;margin-right:auto}.social-links{justify-content:center}.footer-bottom{flex-direction:column;text-align:center}.whatsapp-float span{display:none}.whatsapp-float{padding:14px;border-radius:50%}}
+        @media(max-width:480px){.hero-text h1{font-size:1.8rem}.section-title{font-size:1.5rem}.hero-graphic{max-width:280px}.tech-center{width:110px;height:110px;border-radius:20px}.tech-center svg{width:45px;height:45px}.why-us-grid{grid-template-columns:1fr}}
     </style>
 </head>
 <body>
@@ -201,8 +183,7 @@
             <li><a href="#home">Inicio</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#por-que">¿Por qué elegirnos?</a></li>
-            <li><a href="#casos">Casos de Éxito</a></li>
+            <li><a href="#casos">Clientes</a></li>
             <li><a href="#contacto" class="nav-cta">Contacto</a></li>
         </ul>
         <div class="mobile-menu-btn"><span></span><span></span><span></span></div>
@@ -247,18 +228,18 @@
                         <div class="about-icon-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg></div>
                     </div>
                     <h3 style="font-family:'Orbitron',monospace;font-size:1.3rem;margin-bottom:0.75rem;text-align:center">Tecnología que Transforma</h3>
-                    <p style="color:var(--text-secondary);text-align:center;font-size:0.9rem">Más de 10 años impulsando el crecimiento de empresas en Monterrey y todo México.</p>
+                    <p style="color:var(--text-secondary);text-align:center;font-size:0.9rem">Impulsando el crecimiento de empresas en Monterrey y todo México.</p>
                 </div>
             </div>
             <div class="about-text fade-in">
                 <div class="section-tag">Sobre Nosotros</div>
                 <h2 class="section-title">Somos <span class="gradient-text">Digital Systems Monterrey</span></h2>
                 <p>Nacimos con una misión clara: democratizar el acceso a soluciones tecnológicas de clase mundial para empresas de todos los tamaños. Creemos que cada negocio merece las herramientas digitales que impulsen su crecimiento exponencial.</p>
-                <p>Nuestro equipo combina experiencia técnica de vanguardia con una profunda comprensión de las necesidades empresariales reales. No solo desarrollamos tecnología; creamos alianzas estratégicas que transforman la manera en que nuestros clientes operan y compiten.</p>
+                <p>Nuestro equipo combina experiencia técnica de vanguardia con una profunda comprensión de las necesidades empresariales reales. No solo desarrollamos tecnología; creamos alianzas estratégicas.</p>
                 <div class="about-features">
-                    <div class="about-feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="feature-content"><h4>Enfoque en Resultados Medibles</h4><p>Cada proyecto tiene KPIs claros y métricas de éxito definidas desde el inicio.</p></div></div>
-                    <div class="about-feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="feature-content"><h4>Innovación Constante</h4><p>Implementamos las últimas tecnologías y metodologías del mercado.</p></div></div>
-                    <div class="about-feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="feature-content"><h4>Compromiso Total</h4><p>Tu éxito es nuestro éxito. Trabajamos como extensión de tu equipo.</p></div></div>
+                    <div class="about-feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="feature-content"><h4>Enfoque en Resultados Medibles</h4><p>Cada proyecto tiene KPIs claros y métricas de éxito definidas.</p></div></div>
+                    <div class="about-feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="feature-content"><h4>Innovación Constante</h4><p>Implementamos las últimas tecnologías del mercado.</p></div></div>
+                    <div class="about-feature"><div class="feature-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><div class="feature-content"><h4>Compromiso Total</h4><p>Tu éxito es nuestro éxito. Somos tu equipo extendido.</p></div></div>
                 </div>
             </div>
         </div>
@@ -273,125 +254,205 @@
             <div class="service-card fade-in">
                 <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="m9 10 2 2 4-4"/></svg></div>
                 <h3>Sistemas Digitales</h3>
-                <p>Desarrollo de soluciones tecnológicas a la medida que automatizan, optimizan y escalan las operaciones de tu negocio.</p>
+                <p>Desarrollo de soluciones tecnológicas a la medida que automatizan y escalan tu negocio.</p>
                 <div class="service-features">
                     <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Software Personalizado</span></div>
                     <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Aplicaciones Web y Móviles</span></div>
-                    <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Integración CRM/ERP</span></div>
-                    <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Sistemas en la Nube</span></div>
+                    <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>E-commerce y Tiendas Online</span></div>
+                    <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Integración con Plataformas</span></div>
                 </div>
-                <a href="#sistemas-digitales" class="btn btn-secondary">Conocer Más</a>
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg></div>
                 <h3>Mantenimiento Digital</h3>
-                <p>Gestión integral y profesional de todas tus cuentas y activos digitales para mantener tu presencia online impecable.</p>
+                <p>Gestión integral de tus cuentas y activos digitales para mantener tu presencia online.</p>
                 <div class="service-features">
                     <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Gestión de Redes Sociales</span></div>
                     <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Monitoreo de Métricas</span></div>
                     <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Programación de Contenido</span></div>
-                    <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Soporte Técnico 24/7</span></div>
+                    <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Soporte Técnico Continuo</span></div>
                 </div>
-                <a href="#mantenimiento-digital" class="btn btn-secondary">Conocer Más</a>
             </div>
             <div class="service-card fade-in">
                 <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
                 <h3>Marketing 360°</h3>
-                <p>Estrategias omnicanal diseñadas para maximizar tu visibilidad, generar leads cualificados y convertir prospectos.</p>
+                <p>Estrategias omnicanal para maximizar tu visibilidad y convertir prospectos en clientes.</p>
                 <div class="service-features">
                     <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>SEO y SEM Avanzado</span></div>
                     <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Publicidad en Redes</span></div>
                     <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Branding y Diseño</span></div>
-                    <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Embudos de Conversión</span></div>
-                </div>
-                <a href="#marketing-360" class="btn btn-secondary">Conocer Más</a>
-            </div>
-        </div>
-    </section>
-0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg></div><div><h4>Publicidad en Redes</h4><p>Campañas segmentadas en Meta, TikTok, LinkedIn.</p></div></div>
-                    <div class="detail-feature"><div class="detail-feature-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><div><h4>Generación de Leads</h4><p>Captación de prospectos cualificados para tu equipo.</p></div></div>
-                    <div class="detail-feature"><div class="detail-feature-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><div><h4>Embudos de Conversión</h4><p>Automatización del journey hasta la venta.</p></div></div>
+                    <div class="service-feature"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span>Generación de Leads</span></div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- CASOS DE ÉXITO - CLIENTES REALES -->
+    <section class="cases" id="casos">
+        <div class="section-header fade-in">
+            <div class="section-tag">Nuestros Clientes</div>
+            <h2 class="section-title">Casos de <span class="gradient-text">Éxito</span></h2>
+            <p class="section-subtitle">Empresas que confían en nosotros para impulsar su presencia digital.</p>
+        </div>
+        <div class="cases-grid">
+            <!-- CALOR Perfumería -->
+            <div class="case-card fade-in">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&h=600&fit=crop" alt="CALOR Perfumería">
+                <div class="case-overlay">
+                    <div class="case-logo">CALOR</div>
+                    <div class="case-info">
+                        <h4>CALOR Perfumería</h4>
+                        <p>E-commerce de fragancias premium con catálogo digital interactivo y sistema de pedidos automatizado.</p>
+                        <div class="case-tags">
+                            <span class="case-tag">E-commerce</span>
+                            <span class="case-tag">Catálogo Digital</span>
+                            <span class="case-tag">Redes Sociales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AM Perfumes -->
+            <div class="case-card fade-in">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600&h=600&fit=crop" alt="AM Perfumes">
+                <div class="case-overlay">
+                    <div class="case-logo">AM</div>
+                    <div class="case-info">
+                        <h4>AM Perfumes</h4>
+                        <p>Tienda online de fragancias con productos destacados, sistema de promociones y gestión de inventario.</p>
+                        <div class="case-tags">
+                            <span class="case-tag">Tienda Online</span>
+                            <span class="case-tag">Marketing Digital</span>
+                            <span class="case-tag">Branding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- El Vaquero -->
+            <div class="case-card fade-in">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&h=600&fit=crop" alt="El Vaquero Barbacoa">
+                <div class="case-overlay">
+                    <div class="case-logo" style="font-size:0.55rem">EL VAQUERO</div>
+                    <div class="case-info">
+                        <h4>El Vaquero - Barbacoa y Menudo</h4>
+                        <p>Identidad visual completa, gestión de redes sociales y estrategia de marketing local para restaurante tradicional.</p>
+                        <div class="case-tags">
+                            <span class="case-tag">Branding</span>
+                            <span class="case-tag">Redes Sociales</span>
+                            <span class="case-tag">Marketing Local</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- U MADE -->
+            <div class="case-card fade-in">
+                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&h=600&fit=crop" alt="U MADE Restaurant">
+                <div class="case-overlay">
+                    <div class="case-logo">U MADE</div>
+                    <div class="case-info">
+                        <h4>U MADE - Barbacoa y Menudo</h4>
+                        <p>Integración con Rappi y DiDi, sistema de pedidos online y gestión de contenido para redes sociales.</p>
+                        <div class="case-tags">
+                            <span class="case-tag">Delivery Apps</span>
+                            <span class="case-tag">Pedidos Online</span>
+                            <span class="case-tag">Social Media</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Menudo Don Luis -->
+            <div class="case-card fade-in">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=600&fit=crop" alt="Menudo Don Luis">
+                <div class="case-overlay">
+                    <div class="case-logo" style="font-size:0.5rem">MENUDO DON LUIS</div>
+                    <div class="case-info">
+                        <h4>Menudo Don Luis</h4>
+                        <p>"El mejor menudo de Apodaca" - Campaña de posicionamiento local, diseño publicitario y gestión de redes.</p>
+                        <div class="case-tags">
+                            <span class="case-tag">Publicidad</span>
+                            <span class="case-tag">Posicionamiento</span>
+                            <span class="case-tag">Diseño</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PM Fragancias -->
+            <div class="case-card fade-in">
+                <img src="https://images.unsplash.com/photo-1619994403073-2cec844b8e63?w=600&h=600&fit=crop" alt="PM Fragancias">
+                <div class="case-overlay">
+                    <div class="case-logo">PM</div>
+                    <div class="case-info">
+                        <h4>PM Fragancias</h4>
+                        <p>Contenido visual de alto impacto, estrategia de marketing digital y gestión de campañas publicitarias.</p>
+                        <div class="case-tags">
+                            <span class="case-tag">Contenido Visual</span>
+                            <span class="case-tag">Ads</span>
+                            <span class="case-tag">Estrategia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="why-us" id="por-que">
         <div class="section-header fade-in">
             <div class="section-tag">¿Por Qué Elegirnos?</div>
             <h2 class="section-title">La Diferencia <span class="gradient-text">Digital Systems</span></h2>
-            <p class="section-subtitle">No somos solo proveedores de tecnología; somos socios estratégicos comprometidos con tu éxito.</p>
         </div>
         <div class="why-us-grid">
-            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Tecnología + Estrategia</h3><p>Soluciones técnicas con visión de negocio.</p></div>
-            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><h3>Atención Personalizada</h3><p>Equipo dedicado a tus necesidades.</p></div>
-            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div><h3>Resultados Medibles</h3><p>KPIs claros que demuestran el ROI.</p></div>
-            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/></svg></div><h3>Innovación Constante</h3><p>Últimas tendencias y tecnologías.</p></div>
-            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg></div><h3>Soporte Continuo</h3><p>Acompañamiento permanente 24/7.</p></div>
+            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Tecnología + Estrategia</h3><p>Soluciones con visión de negocio.</p></div>
+            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><h3>Atención Personalizada</h3><p>Equipo dedicado a ti.</p></div>
+            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div><h3>Resultados Medibles</h3><p>KPIs claros y ROI real.</p></div>
+            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/></svg></div><h3>Innovación</h3><p>Últimas tendencias.</p></div>
+            <div class="why-card fade-in"><div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg></div><h3>Soporte 24/7</h3><p>Siempre disponibles.</p></div>
         </div>
     </section>
-    <section class="testimonials" id="casos">
-        <div class="section-header fade-in">
-            <div class="section-tag">Casos de Éxito</div>
-            <h2 class="section-title">Historias de <span class="gradient-text">Transformación</span></h2>
-            <p class="section-subtitle">Empresas que confiaron en nosotros y ahora lideran en sus industrias.</p>
-        </div>
-        <div class="testimonials-container">
-            <div class="testimonials-grid">
-                <div class="testimonial-card fade-in"><div class="testimonial-quote">"</div><div class="testimonial-content"><p>Digital Systems transformó completamente nuestra operación. El sistema de gestión nos permitió reducir tiempos de respuesta en un 60% y aumentar la satisfacción del cliente.</p></div><div class="testimonial-author"><div class="author-avatar">MR</div><div class="author-info"><h4>María Rodríguez</h4><p>CEO, Distribuidora del Norte</p></div></div></div>
-                <div class="testimonial-card fade-in"><div class="testimonial-quote">"</div><div class="testimonial-content"><p>Gracias a su estrategia de marketing 360°, pasamos de 50 leads mensuales a más de 300. El ROI superó nuestras expectativas.</p></div><div class="testimonial-author"><div class="author-avatar">CG</div><div class="author-info"><h4>Carlos García</h4><p>Director, TechSolutions MTY</p></div></div></div>
-                <div class="testimonial-card fade-in"><div class="testimonial-quote">"</div><div class="testimonial-content"><p>El mantenimiento de nuestras cuentas digitales era un caos. Ahora tenemos todo organizado, métricas claras y crecimiento orgánico constante.</p></div><div class="testimonial-author"><div class="author-avatar">AL</div><div class="author-info"><h4>Ana Lucía Mendoza</h4><p>Fundadora, Estética Premium</p></div></div></div>
-            </div>
-            <div class="results-metrics fade-in">
-                <div class="result-item"><div class="result-number">150+</div><div class="result-label">Proyectos Completados</div></div>
-                <div class="result-item"><div class="result-number">$2.5M+</div><div class="result-label">Generados para Clientes</div></div>
-                <div class="result-item"><div class="result-number">98%</div><div class="result-label">Tasa de Retención</div></div>
-                <div class="result-item"><div class="result-number">4.9/5</div><div class="result-label">Calificación Promedio</div></div>
-            </div>
-        </div>
-    </section>
+
     <section class="contact" id="contacto">
         <div class="section-header fade-in">
             <div class="section-tag">Contacto</div>
-            <h2 class="section-title">Iniciemos tu <span class="gradient-text">Transformación Digital</span></h2>
-            <p class="section-subtitle">Estamos listos para escuchar tus necesidades y diseñar la solución perfecta.</p>
+            <h2 class="section-title">Iniciemos tu <span class="gradient-text">Transformación</span></h2>
         </div>
         <div class="contact-container">
             <div class="contact-info fade-in">
                 <h3>Hablemos de tu Proyecto</h3>
-                <p>Agenda una consulta gratuita y descubre cómo podemos impulsar el crecimiento de tu empresa.</p>
+                <p>Agenda una consulta gratuita y descubre cómo podemos impulsar tu negocio.</p>
                 <div class="contact-methods">
                     <a href="https://wa.me/528318989580?text=Hola,%20me%20interesa%20conocer%20sus%20servicios" class="contact-method" target="_blank"><div class="method-icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div><div class="method-content"><h4>WhatsApp</h4><p>+52 831 898 9580</p></div></a>
                     <a href="mailto:contacto@digitalsystemsmty.com" class="contact-method"><div class="method-icon"><svg viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div><div class="method-content"><h4>Email</h4><p>contacto@digitalsystemsmty.com</p></div></a>
-                    <div class="contact-method"><div class="method-icon"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div><div class="method-content"><h4>Ubicación</h4><p>Monterrey, Nuevo León, México</p></div></div>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-                    <a href="#" class="social-link"><svg viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-                    <a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
-                    <a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg></a>
+                    <a href="https://www.instagram.com/digital_systems_monterrey" class="contact-method" target="_blank"><div class="method-icon"><svg viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></div><div class="method-content"><h4>Instagram</h4><p>@digital_systems_monterrey</p></div></a>
                 </div>
             </div>
+            <!-- FORMULARIO SIMPLIFICADO -->
             <div class="contact-form-container fade-in">
+                <h3 style="font-family:'Orbitron',monospace;font-size:1.3rem;margin-bottom:1.5rem;text-align:center">Envíanos un mensaje</h3>
                 <form class="contact-form" id="contactForm">
-                    <div class="form-row"><div class="form-group"><label for="nombre">Nombre Completo</label><input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required></div><div class="form-group"><label for="empresa">Empresa</label><input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa"></div></div>
-                    <div class="form-row"><div class="form-group"><label for="email">Correo Electrónico</label><input type="email" id="email" name="email" placeholder="tu@email.com" required></div><div class="form-group"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" placeholder="+52 xxx xxx xxxx"></div></div>
-                    <div class="form-group"><label for="servicio">Servicio de Interés</label><select id="servicio" name="servicio"><option value="">Selecciona un servicio</option><option value="sistemas">Sistemas Digitales</option><option value="mantenimiento">Mantenimiento de Cuentas Digitales</option><option value="marketing">Marketing 360° y Publicidad</option><option value="integral">Solución Integral</option><option value="otro">Otro</option></select></div>
-                    <div class="form-group"><label for="mensaje">¿Cómo podemos ayudarte?</label><textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." required></textarea></div>
-                    <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4Z"/><path d="m22 2-11 11"/></svg>Enviar Mensaje</button>
+                    <div class="form-group"><label for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required></div>
+                    <div class="form-group"><label for="telefono">WhatsApp / Teléfono</label><input type="tel" id="telefono" name="telefono" placeholder="+52 xxx xxx xxxx" required></div>
+                    <div class="form-group"><label for="mensaje">¿En qué podemos ayudarte?</label><textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Enviar por WhatsApp</button>
                 </form>
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-brand"><a href="#home" class="logo"><div class="logo-icon">DS</div><span class="logo-text">Digital <span>Systems</span></span></a><p>Transformamos negocios a través de soluciones tecnológicas innovadoras y estrategias de marketing digital.</p><div class="social-links"><a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" class="social-link"><svg viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></a><a href="#" class="social-link"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a></div></div>
-            <div class="footer-column"><h4>Servicios</h4><ul class="footer-links"><li><a href="#sistemas-digitales">Sistemas Digitales</a></li><li><a href="#mantenimiento-digital">Mantenimiento Digital</a></li><li><a href="#marketing-360">Marketing 360°</a></li><li><a href="#contacto">Consultoría Gratuita</a></li></ul></div>
-            <div class="footer-column"><h4>Empresa</h4><ul class="footer-links"><li><a href="#nosotros">Sobre Nosotros</a></li><li><a href="#casos">Casos de Éxito</a></li><li><a href="#por-que">¿Por Qué Elegirnos?</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
-            <div class="footer-column"><h4>Contacto</h4><ul class="footer-links"><li><a href="https://wa.me/528318989580" target="_blank">+52 831 898 9580</a></li><li><a href="mailto:contacto@digitalsystemsmty.com">contacto@digitalsystemsmty.com</a></li><li><a href="#">Monterrey, N.L., México</a></li><li><a href="#">Lun - Vie: 9:00 - 18:00</a></li></ul></div>
+            <div class="footer-brand"><a href="#home" class="logo"><div class="logo-icon">DS</div><span class="logo-text">Digital <span>Systems</span></span></a><p>Sistemas digitales y mantenimiento de cuentas. Tus aliados tecnológicos para hacer crecer tu negocio.</p><div class="social-links"><a href="https://www.instagram.com/digital_systems_monterrey" class="social-link" target="_blank"><svg viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg></a><a href="https://wa.me/528318989580" class="social-link" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a></div></div>
+            <div class="footer-column"><h4>Servicios</h4><ul class="footer-links"><li><a href="#servicios">Sistemas Digitales</a></li><li><a href="#servicios">Mantenimiento Digital</a></li><li><a href="#servicios">Marketing 360°</a></li></ul></div>
+            <div class="footer-column"><h4>Empresa</h4><ul class="footer-links"><li><a href="#nosotros">Sobre Nosotros</a></li><li><a href="#casos">Clientes</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+            <div class="footer-column"><h4>Contacto</h4><ul class="footer-links"><li><a href="https://wa.me/528318989580" target="_blank">+52 831 898 9580</a></li><li><a href="https://www.instagram.com/digital_systems_monterrey" target="_blank">@digital_systems_monterrey</a></li><li><a href="#">Monterrey, N.L.</a></li></ul></div>
         </div>
-        <div class="footer-bottom"><p>© 2025 Digital Systems Monterrey. Todos los derechos reservados.</p><div class="footer-legal"><a href="#">Política de Privacidad</a><a href="#">Términos y Condiciones</a><a href="#">Aviso Legal</a></div></div>
+        <div class="footer-bottom"><p>© 2025 Digital Systems Monterrey. Todos los derechos reservados.</p><div class="footer-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div></div>
     </footer>
+
     <a href="https://wa.me/528318989580?text=Hola,%20me%20interesa%20conocer%20sus%20servicios" class="whatsapp-float" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>¡Escríbenos!</span></a>
+
     <script>
         const mobileMenuBtn=document.querySelector('.mobile-menu-btn'),navLinks=document.querySelector('.nav-links');
         mobileMenuBtn.addEventListener('click',()=>{mobileMenuBtn.classList.toggle('active');navLinks.classList.toggle('active')});
@@ -400,7 +461,7 @@
         const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('visible')})},{threshold:0.1});
         document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
         document.querySelectorAll('a[href^="#"]').forEach(anchor=>{anchor.addEventListener('click',function(e){e.preventDefault();const target=document.querySelector(this.getAttribute('href'));if(target)target.scrollIntoView({behavior:'smooth',block:'start'})})});
-        document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const fd=new FormData(this);let msg=encodeURIComponent('¡Hola! Soy '+fd.get('nombre')+(fd.get('empresa')?' de '+fd.get('empresa'):'')+'.\\n\\n📧 Email: '+fd.get('email')+'\\n'+(fd.get('telefono')?'📱 Tel: '+fd.get('telefono')+'\\n':'')+(fd.get('servicio')?'🎯 Servicio: '+fd.get('servicio')+'\\n':'')+'\\n💬 Mensaje:\\n'+fd.get('mensaje'));window.open('https://wa.me/528318989580?text='+msg,'_blank')});
+        document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const fd=new FormData(this);let msg=encodeURIComponent('¡Hola! Soy '+fd.get('nombre')+'\\n📱 Mi WhatsApp: '+fd.get('telefono')+'\\n\\n💬 '+fd.get('mensaje'));window.open('https://wa.me/528318989580?text='+msg,'_blank')});
     </script>
 </body>
 </html>
